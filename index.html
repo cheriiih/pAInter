@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Painter </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navba Section -->
+     <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <img src="https://cdn.discordapp.com/attachments/846086665969467402/1152693191980617849/A4.png" height="40">
+                <a href="/" id="painter__logo">Painter</a>
+            </div>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tutorials.html" class="navbar__links">Tutorials</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>  
+     </nav>
+
+     
+     <!-- Hero Section -->
+     <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>AI FOR </h1>
+                <h2>ARTISTS</h2>
+                <p> Train your own model.</p>
+                <button class="main__btn"><a href="/">Train now</
+                a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="{{ url_for('static', filename='images/pic1.svg') }}" alt="opening" id="main__img">
+            </div>
+        </div>
+     </div>
+
+     <div class="wrapper">
+        <div class="form-box login">
+          <div class="login-header">
+            <h2>Login</h2>
+          </div>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+          </form>
+          <div class="login-register">
+            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+          </div>
+        </div>
+      </div>
+      
+
+
+     <script src="app.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+     <script src="{{ url_for('static', filename='app.js') }}"></script>
+     
+
+
+</body>
+</html>
